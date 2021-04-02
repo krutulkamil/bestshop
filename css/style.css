@@ -7,10 +7,11 @@
     --color-grey: #A5A5A5;
     --color-light-grey: #F7F7F7;
     --color-white: #FFFFFF;
-    --button-radius: 35px;
     --font-raleway: "Raleway", sans-serif;
     --font-open-sans: "Open Sans", sans-serif;
 }
+
+/* GENERAL */
 
 * {
     box-sizing: border-box;
@@ -28,3 +29,114 @@ a {
     width: 1352px;
     margin: 0 auto;
 }
+
+/* HEADINGS */
+
+h1 {
+    font-family: var(--font-raleway);
+    font-size: 3.0625rem;
+    line-height: 3.5625rem;
+}
+
+h2 {
+    font-family: var(--font-raleway);
+    font-size: 2.25rem;
+    line-height: 2.625rem;
+}
+
+h3 {
+    font-family: var(--font-raleway);
+    font-size: 3.0625rem;
+    line-height: 3.5625rem;
+}
+
+/* BUTTONS */
+
+.btn {
+    border: none;
+    color: white;
+    font-weight: 700;
+    display: inline-block;
+    border-radius: 23px;
+    padding: 16px 57px;
+}
+
+.btn--cta {
+    padding: 22px 157px;
+    background-color: var(--color-primary);
+    box-shadow: var(--color-primary-shadow);
+    border-radius: 40px;
+}
+
+.btn--primary {
+    background-color: var(--color-primary);
+    box-shadow: var(--color-primary-shadow);
+}
+
+.btn--red {
+    background-color: var(--color-redish);
+}
+
+.btn--green {
+    background-color: var(--color-green);
+}
+
+.btn--form {
+    background-color: var(--color-primary);
+    box-shadow: var(--color-primary-shadow);
+    padding: 20px 97px;
+    border-radius: 35px;
+}
+
+/* HEADER NAV */
+
+.header {
+    height: 70px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .29);
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    color: var(--color-primary);
+    font-family: var(--font-raleway);
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 2.3125rem;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.nav__element {
+    padding: 0 26px;
+}
+
+.nav__element:last-child {
+    padding-right: 0;
+}
+
+.nav__link {
+    color: var(--color-grey);
+    text-transform: uppercase;
+    font-size: 0.6875rem;
+    letter-spacing: 0.205rem;
+    line-height: 0.9375rem;
+    font-weight: 700;
+    padding: 28px 18px 22px;
+    border-bottom: 4px solid transparent;
+    transition: 0.5s ease-out;
+}
+
+.nav__link:hover {
+    color: var(--color-black);
+    border-color: var(--color-primary);
+}
+
+/* MAIN CONTENT */
