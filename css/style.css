@@ -240,3 +240,149 @@ h3 {
     line-height: 1.25rem;
     color: var(--color-grey);
 }
+
+/* BENEFITS SECTION */
+
+.benefits {
+    padding: 105px 0;
+    background-color: var(--color-light-grey);
+}
+
+.benefits__container {
+    padding: 0 114px;
+}
+
+.benefits__single {
+    background-color: var(--color-white);
+    border: 1px solid #E8E9ED;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 36px;
+    border-radius: 5px;
+}
+
+.benefits__text {
+    box-sizing: content-box;
+    max-width: 416px;
+    margin: 90px 36px;
+}
+
+.benefits__text::after {
+    content: '';
+    display: block;
+    width: 328px;
+    height: 4px;
+    margin-top: 50px;
+    background-color: var(--accent-color);
+}
+
+.benefits__description {
+    margin-top: 30px;
+    line-height: 1.375rem;
+}
+
+.benefits__single--notebook {
+    --accent-color: var(--color-redish);
+}
+
+.benefits__single--notebook .benefits__image {
+    margin-right: 117px;
+    margin-bottom: 38px;
+    position: relative;
+}
+
+.benefits__single--notebook .benefits__image img {
+    width: 386px;
+    height: auto;
+    z-index: 2;
+    position: relative;
+}
+
+.benefits__single--notebook .benefits__image::before {
+    content: '';
+    width: 180px;
+    height: 180px;
+    border-radius: 41px;
+    background-color: var(--accent-color);
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    top: -40px;
+    right: 0;
+}
+
+.benefits__single--iphone {
+    flex-direction: row-reverse;
+    --accent-color: var(--color-primary);
+    padding: 0 20px 0 70px;
+}
+
+.benefits__single--iphone .benefits__image {
+    position: relative;
+
+}
+.benefits__single--iphone .benefits__image img {
+    width: 426px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.benefits__single--iphone .benefits__description::before {
+    background-color: var(--accent-color);
+}
+
+.benefits__single--iphone .benefits__image::after {
+    content: '';
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: 0;
+}
+
+.benefits__single--iphone .benefits__text {
+    margin: 69px 0;
+}
+
+.benefits__double {
+    display: flex;
+}
+
+.benefits__single--no-img,
+.benefits__single--trumpet {
+    --accent-color: var(--color-green);
+}
+
+.benefits__double .benefits__single {
+    margin-bottom: 0;
+}
+
+.benefits__single--no-img .benefits__text {
+    box-sizing: content-box;
+    max-width: 553px;
+    margin: 69px 35px;
+}
+
+.benefits__single--no-img .benefits__description:after {
+    background-color: var(--accent-color);
+}
+
+.benefits__single--trumpet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    background-color: var(--accent-color);
+    margin-left: 60px;
+}
+
+.benefits__single--trumpet img {
+    width: 295px;
+    height: auto;
+    margin-top: 50px;
+}
