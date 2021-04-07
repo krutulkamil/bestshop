@@ -168,6 +168,22 @@ h3 {
 
 .opening__header {
     margin-top: 200px;
+    animation: text-slide 1.2s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.2s both;
+}
+
+@keyframes text-slide {
+    0% {
+        letter-spacing: -0.5em;
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .opening__text {
@@ -326,6 +342,16 @@ h3 {
     transform: rotate(45deg);
     top: -40px;
     right: 0;
+    animation: rotate-square 10s linear infinite both;
+}
+
+@keyframes rotate-square {
+    0% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(405deg);
+    }
 }
 
 .benefits__single--iphone {
@@ -359,6 +385,16 @@ h3 {
     position: absolute;
     top: -20px;
     left: 0;
+    animation: scale-circle 2s linear infinite alternate-reverse;
+}
+
+@keyframes scale-circle {
+    0% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 .benefits__single--iphone .benefits__text {
@@ -401,6 +437,43 @@ h3 {
     width: 295px;
     height: auto;
     margin-top: 50px;
+    animation: vibrate 2s linear infinite both;
+}
+
+@keyframes vibrate {
+    0% {
+        transform: translate(0);
+    }
+    10% {
+        transform: translate(-3px, -3px);
+    }
+    20% {
+        transform: translate(3px, -3px);
+    }
+    30% {
+        transform: translate(-3px, 3px);
+    }
+    40% {
+        transform: translate(3px, 3px);
+    }
+    50% {
+        transform: translate(-3px, -3px);
+    }
+    60% {
+        transform: translate(3px, -3px);
+    }
+    70% {
+        transform: translate(-3px, 3px);
+    }
+    80% {
+        transform: translate(-3px, -3px);
+    }
+    90% {
+        transform: translate(3px, -3px);
+    }
+    100% {
+        transform: translate(0);
+    }
 }
 
 /* PRICING SECTION */
