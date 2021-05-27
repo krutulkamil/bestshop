@@ -1,0 +1,52 @@
+/* BUTTONS */
+
+.btn {
+  border: none;
+  font-weight: 700;
+  display: inline-block;
+  border-radius: 23px;
+  padding: 18px 57px;
+  transition: 0.5s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &--cta {
+    padding: 25px 157px;
+    background-color: $color-primary;
+    box-shadow: $color-primary-shadow;
+    border-radius: 40px;
+    @include tablet {
+      display: block;
+      width: calc(100% - 60px);
+      padding: 22px 0;
+      text-align: center;
+    }
+  }
+
+  &--primary {
+    background-color: $color-primary;;
+    box-shadow: 5px 10px 14px $color-primary-shadow;
+    font-size: 0.8125rem;
+    padding: 18px 65px;
+  }
+
+  &--red {
+    background-color: $color-redish;
+    font-size: 0.8125rem;
+  }
+
+  &--green {
+    background-color: $color-green;
+    font-size: 0.8125rem;
+  }
+
+  &--form {
+    background-color: $color-primary;
+    box-shadow: 5px 10px 14px $color-primary-shadow;
+    padding: 22px 97px;
+    border-radius: 35px;
+    font-size: 0.8125rem;
+  }
+}

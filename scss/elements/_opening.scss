@@ -1,0 +1,39 @@
+/* OPENING SECTION */
+
+.opening {
+  overflow: hidden;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+  }
+
+  &__header {
+    margin-top: 200px;
+    @include tablet {
+      margin-top: 170px;
+    }
+    animation: text-slide 1.4s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.2s both;
+  }
+
+  &__text {
+    margin-top: 20px;
+    margin-bottom: 38px;
+
+    @include tablet {
+      text-align: center;
+      padding: 0 60px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+
+    @include tablet {
+      width: 200%;
+      transform: translateX(-26%);
+    }
+  }
+}

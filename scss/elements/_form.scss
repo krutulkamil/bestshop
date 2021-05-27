@@ -1,0 +1,73 @@
+/* CONTACT SECTION - CONTACT FORM */
+
+.contact {
+
+  &__form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      margin-top: 40px;
+      width: 100%;
+    }
+
+    .btn--form {
+      align-self: flex-end;
+      margin-top: 20px;
+    }
+
+  }
+
+  &__label {
+    font-weight: 700;
+    font-size: 0.6875rem;
+    letter-spacing: 0.205rem;
+    color: $color-primary;
+    line-height: 0.9375rem;
+  }
+}
+
+input[type="text"],
+input[type="email"] {
+  width: auto;
+  line-height: 2.625rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid $color-input;
+  margin-bottom: 40px;
+}
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkbox {
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  font-size: 0.75rem;
+  line-height: 1.0625rem;
+  color: $color-checkbox-text;
+}
+
+.checkbox span {
+  height: 24px;
+  flex-shrink: 0;
+  flex-basis: 24px;
+  border: 1px solid $color-input;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.checkbox input:checked + span {
+  background-image: url("../assets/Checkmark.svg");
+  background-repeat: no-repeat;
+  background-size: 12px 11px;
+  background-position: center;
+}

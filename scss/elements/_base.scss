@@ -1,0 +1,56 @@
+/* GENERAL */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-open-sans;
+}
+
+a {
+  text-decoration: none;
+  color: $color-white;
+}
+
+.container {
+  max-width: 1352px;
+  margin: 0 auto;
+  @include tablet {
+    width: 100%;
+    padding: 0 15px;
+  }
+  @include notebook {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+}
+
+/* HEADINGS */
+
+h1 {
+  font-family: $font-raleway;
+  font-size: 3.0625rem;
+  line-height: 3.5625rem;
+}
+
+h2 {
+  font-family: $font-raleway;
+  font-size: 2.25rem;
+  line-height: 2.625rem;
+}
+
+h3 {
+  font-family: $font-raleway;
+  font-size: 3.0625rem;
+  line-height: 3.5625rem;
+}
+
+.logo {
+  font-family: $font-raleway;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 2.3125rem;
+  color: $color-primary;
+}

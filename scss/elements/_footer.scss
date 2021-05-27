@@ -1,0 +1,53 @@
+/* FOOTER */
+
+.footer {
+  height: 90px;
+  background-color: $color-light-grey;
+  box-shadow: 0 -5px 40px rgba(0, 0, 0, .29);
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__logo {
+    font-family: $font-raleway;
+    font-size: 1.625rem;
+    font-weight: 300;
+    color: $color-primary;
+    line-height: 1.875rem;
+  }
+
+  &__copyright {
+    margin-top: 6px;
+    display: block;
+    font-size: 0.6875rem;
+    line-height: 0.9375rem;
+    color: $color-grey;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__social-media {
+    transition: 0.4s;
+
+    &:nth-of-type(2) {
+      margin-left: 20px;
+    }
+
+    &:hover {
+      transform: scale(1.4);
+    }
+  }
+}

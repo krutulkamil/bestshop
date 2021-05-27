@@ -1,0 +1,121 @@
+/* HEADER NAV */
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+  height: 70px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .29);
+  background-color: $color-white;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__nav {
+    display: flex;
+    @include tablet {
+      position: absolute;
+      left: 0;
+      top: 71px;
+      flex-direction: column;
+      background-color: white;
+      width: 100%;
+      display: none;
+    }
+  }
+
+  .nav {
+
+    &__element {
+      padding: 0 26px;
+      @include tablet {
+        padding: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+    &__link {
+      padding: 28px 18px 22px;
+      @include tablet {
+        display: block;
+        padding: 14px 20px;
+      }
+      font-size: 0.6875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.205rem;
+      line-height: 0.9375rem;
+      font-weight: 700;
+      color: $color-grey;
+      border-bottom: 4px solid transparent;
+      transition: color 0.5s ease-in-out, border-color 0.5s ease-in-out;
+
+      &:hover {
+        color: $color-black;
+        border-color: $color-primary;
+      }
+    }
+  }
+
+  .menu {
+    &__btn {
+      display: none;
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+      opacity: 0;
+
+      @include tablet {
+        &:checked {
+          ~ .header__nav {
+            display: flex;
+          }
+
+          ~ .menu__toggle {
+            span {
+              &:nth-child(1) {
+                transform: rotate(45deg) translate(2px, 5px);
+              }
+              &:nth-child(2) {
+                opacity: 0;
+              }
+              &:nth-child(3) {
+                transform: rotate(-45deg) translate(2px, -5px);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__toggle {
+      display: none;
+
+      span {
+        width: 20px;
+        height: 2px;
+        display: block;
+        margin-bottom: 3px;
+        background-color: $color-primary;
+        transition: .3s all ease-in-out;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      @include tablet {
+        display: block;
+      }
+    }
+  }
+}
