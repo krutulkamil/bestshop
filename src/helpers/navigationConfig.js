@@ -7,7 +7,7 @@ const navigationConfig = [
     {
         name: 'Benefits',
         id: 'benefits',
-        offset: 0
+        offset: -30
     },
     {
         name: 'Prices',

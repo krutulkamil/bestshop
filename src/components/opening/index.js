@@ -9,7 +9,7 @@ const Opening = () => {
                 <p className="opening__text">Open shop on our platform and increase your sales</p>
                 <a href="#" className="btn btn--cta">Open your shop</a>
             </div>
-            <img src={background} alt="" className="opening__image" />
+            <img src={background} alt="BestShop Hero" className="opening__image" />
         </section>
     )
 };

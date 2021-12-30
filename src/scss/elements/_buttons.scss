@@ -50,5 +50,9 @@
     padding: 22px 97px;
     border-radius: 35px;
     font-size: 0.8125rem;
+
+    @include tablet {
+      padding: 15px 65px;
+    }
   }
 }

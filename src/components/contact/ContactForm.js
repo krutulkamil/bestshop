@@ -1,9 +1,10 @@
 import React from 'react';
-
 import {useForm} from "react-hook-form";
+import Recaptcha from 'react-recaptcha';
 
 const ContactForm = () => {
     const {register, handleSubmit, reset, formState: {errors}} = useForm();
+    const RECAPTCHA_KEY = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
 
     return (
         <form onSubmit={handleSubmit(data => {
@@ -48,6 +49,13 @@ const ContactForm = () => {
             </label>
             {errors.terms?.message && <p className="contact__label" style={{color: 'red', textAlign: 'right', marginTop: '10px'}}>{errors.terms?.message}</p>}
             <button className="btn btn--form" type="submit">Send</button>
+
+            <Recaptcha
+                sitekey={RECAPTCHA_KEY}
+                render="explicit"
+                hl="pl"
+                size="invisible"
+            />
         </form>
     )
 };
