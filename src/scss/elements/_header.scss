@@ -1,5 +1,9 @@
 /* HEADER NAV */
 
+.logo:hover {
+  cursor: pointer;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -62,6 +66,7 @@
       &:hover {
         color: $color-black;
         border-color: $color-primary;
+        cursor: pointer;
       }
     }
   }
@@ -99,6 +104,11 @@
 
     &__toggle {
       display: none;
+      padding: 20px 0 20px 20px;
+
+      &:hover {
+        cursor: pointer;
+      }
 
       span {
         width: 20px;

@@ -1,12 +1,14 @@
 import React from 'react';
+import navigationConfig from '../../helpers/navigationConfig.js'
+import HeaderNavElement from "./HeaderNavElement";
 
-const HeaderNav = () => {
+const HeaderNav = ({setIsOpen}) => {
+
     return (
         <ul className="header__nav">
-            <li className="nav__element"><a href="" className="nav__link">Why Us</a></li>
-            <li className="nav__element"><a href="" className="nav__link">Benefits</a></li>
-            <li className="nav__element"><a href="" className="nav__link">Prices</a></li>
-            <li className="nav__element"><a href="" className="nav__link">Contact</a></li>
+            {navigationConfig.map(element => (
+                <HeaderNavElement key={element.id} element={element} setIsOpen={setIsOpen} />
+            ))}
         </ul>
     );
 };

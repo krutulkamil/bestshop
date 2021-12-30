@@ -4,19 +4,19 @@ import HeaderNav from "./HeaderNav";
 const Navigation = () => {
     const [isOpen, setIsOpen] = useState(false);
 
-    const handleMenu = () => {
+    const handleMenuOpen = () => {
         setIsOpen(!isOpen);
     };
 
     return (
         <nav>
-            <input type="checkbox" className="menu__btn" id="menu__btn" onClick={handleMenu}/>
+            <input type="checkbox" className="menu__btn" id="menu__btn" onClick={handleMenuOpen} checked={isOpen}/>
             <label htmlFor="menu__btn" className="menu__toggle">
                 <span/>
                 <span/>
                 <span/>
             </label>
-            <HeaderNav />
+            <HeaderNav setIsOpen={setIsOpen} />
         </nav>
     )
 };
