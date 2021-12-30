@@ -109,11 +109,11 @@
       height: 11px;
       display: inline-block;
       margin-right: 10px;
-      background-image: url("../assets/Ckechmark-1.svg");
+      background-image: url("../../assets/Ckechmark-1.svg");
     }
 
     &--not::before {
-      background-image: url("../assets/Close.svg");
+      background-image: url("../../assets/Close.svg");
     }
   }
 
@@ -156,12 +156,6 @@
 
     @include notebook {
       width: 300px;
-    }
-
-    .pricing__item {
-      margin-bottom: 30px;
-
-
     }
 
     .pricing__type {
