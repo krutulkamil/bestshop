@@ -7,6 +7,8 @@
   border-radius: 23px;
   padding: 18px 57px;
   transition: 0.5s;
+  color: $color-white;
+  font-family: inherit;
 
   &:hover {
     transform: scale(1.1);

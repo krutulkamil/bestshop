@@ -1,14 +1,44 @@
 import React from 'react';
 
+import {useForm} from "react-hook-form";
+
 const ContactForm = () => {
+    const {register, handleSubmit, reset, formState: {errors}} = useForm();
+
     return (
-        <form className="contact__form">
-            <label htmlFor="name" className="contact__label">NAME</label>
-            <input type="text" id="name" />
-            <label htmlFor="email" className="contact__label">E-MAIL</label>
-            <input type="email" id="email" />
-            <label className="checkbox">
-                <input type="checkbox" />
+        <form onSubmit={handleSubmit(data => {
+            console.log(data);
+            reset({name: '', email: ''});
+        })} className="contact__form">
+            <label htmlFor="name" className="contact__label">NAME {errors.name?.message && <span style={{color: 'red'}}> - {errors.name?.message}</span>}</label>
+            <input {...register("name",
+                {
+                    required: 'This field is required',
+                    pattern: {
+                        value: /^[A-Za-z]+$/,
+                        message: 'Only one word can be entered!'
+                    }
+                })}
+                   type="text" id="name" />
+
+            <label htmlFor="email" className="contact__label">E-MAIL {errors.email?.message && <span style={{color: 'red'}}> - {errors.email?.message}</span>}</label>
+            <input {...register("email",
+                {
+                    required: 'This field is required',
+                    pattern: {
+                        value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                        message: "Incorrect e-mail address!"
+                    }
+                })}
+                   type="email" id="email" />
+            <label className="checkbox" htmlFor="terms">
+
+                <input {...register("terms",
+                    {
+                        required: 'Accepting terms and conditions is required',
+                        value: true
+                    })}
+                       type="checkbox" id="terms" />
                 <span/>
                 I hereby give consent for my personal data included in my application to be processed
                 for the purposes of the recruitment process under the European Parliament’s and Council
@@ -16,7 +46,8 @@ const ContactForm = () => {
                 2016, with regard to the processing of personal data and on the free movement of such
                 data, and repealing Directive 95/46/EC (Data Protection Directive)
             </label>
-            <a href="#" className="btn btn--form" type="submit">Send</a>
+            {errors.terms?.message && <p className="contact__label" style={{color: 'red', textAlign: 'right', marginTop: '10px'}}>{errors.terms?.message}</p>}
+            <button className="btn btn--form" type="submit">Send</button>
         </form>
     )
 };
