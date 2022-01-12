@@ -2,76 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="662540e1-f05f-4b03-ac0f-a1775a74b880" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/Background.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/Catalog.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/Checkmark-1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/Checkmark.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/Ckechmark-1.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/Close.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/Eye.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/Facebook.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/Macbook.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/Mail Icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/Person.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/Phone Icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/Trumpet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/Twitter.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/iPhone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/benefits/BenefitsFirst.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/benefits/BenefitsSecond.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/benefits/BenefitsThird.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/benefits/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/contact/ContactForm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/contact/ContactInfo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/contact/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/HeaderNav.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/HeaderNavElement.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/Navigation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/main/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/opening/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pricing/PricingBasic.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pricing/PricingPremium.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pricing/PricingProfessional.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pricing/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/statistics/StatsBlock.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/statistics/StatsContainer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/statistics/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/navigationConfig.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/statisticsConfig.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/elements/_base.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/elements/_benefits.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/elements/_buttons.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/elements/_contact.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/elements/_footer.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/elements/_form.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/elements/_header.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/elements/_opening.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/elements/_pricing.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/elements/_statistics.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/generic/_reset.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/main.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/settings/_colors.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/settings/_fonts.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/settings/_index.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/settings/_keyframes.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/settings/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -110,11 +56,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1641932223580</updated>
-      <workItem from="1641932226767" duration="800000" />
+      <workItem from="1641932226767" duration="2186000" />
+      <workItem from="1642010036642" duration="1651000" />
     </task>
+    <task id="LOCAL-00001" summary="basic frontend/backend setup">
+      <created>1641933230156</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1641933230156</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="basic frontend/backend setup" />
+    <option name="LAST_COMMIT_MESSAGE" value="basic frontend/backend setup" />
   </component>
 </project>
