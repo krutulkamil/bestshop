@@ -1,0 +1,92 @@
+/* LOGIN SECTION - LOGIN FORM */
+
+.login {
+
+  &__form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      margin-top: 40px;
+      width: 100%;
+      padding: 0 50px;
+    }
+
+    @include mobile {
+      padding: 0 20px;
+    }
+
+    .btn--form {
+      align-self: flex-end;
+      margin-top: 20px;
+    }
+
+  }
+
+  &__label {
+    font-weight: 700;
+    font-size: 0.6875rem;
+    letter-spacing: 0.205rem;
+    color: $color-primary;
+    line-height: 0.9375rem;
+    text-transform: uppercase;
+  }
+}
+
+input[type="password"],
+input[type="email"] {
+  width: auto;
+  line-height: 2.625rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid $color-input;
+  margin-bottom: 40px;
+}
+
+input[id="password-strength"] {
+  width: auto;
+  line-height: 2.625rem;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid $color-input;
+  margin-bottom: 3px;
+}
+
+.strength-bar {
+  margin-bottom: 20px;
+}
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkbox {
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  font-size: 0.75rem;
+  line-height: 1.0625rem;
+  color: $color-checkbox-text;
+}
+
+.checkbox span {
+  height: 24px;
+  flex-shrink: 0;
+  flex-basis: 24px;
+  border: 1px solid $color-input;
+  cursor: pointer;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.checkbox input:checked + span {
+  background-image: url("../../assets/Checkmark.svg");
+  background-repeat: no-repeat;
+  background-size: 12px 11px;
+  background-position: center;
+}

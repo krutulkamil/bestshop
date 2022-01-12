@@ -19,7 +19,6 @@ const navigationConfig = [
         id: 'contact',
         offset: -80
     }
-
 ];
 
 export default navigationConfig;
