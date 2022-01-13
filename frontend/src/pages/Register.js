@@ -21,14 +21,18 @@ const Register = () => {
                     </p>
                 </div>
             </div>
-            <form onSubmit={handleSubmit(async (data) => {
+            <form onSubmit={handleSubmit(async (credentials) => {
                 try {
-                    console.log(data);
-                    const req = await axios.post("/register", data);
-                    console.log(req);
-                    toast.success('Registrations successful. Please login')
+                    const { data } = await axios.post("http://localhost:8000/api/register", credentials);
+
+                    if (data.error) {
+                        toast.error(data.error);
+                    } else {
+                        toast.success(data.message);
+                    }
+
                 } catch (error) {
-                    toast.error(error.message)
+                    toast.error(error.message);
                 }
             })} className="login__form">
                 <label
