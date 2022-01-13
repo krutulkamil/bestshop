@@ -32,7 +32,8 @@ const Register = () => {
                         toast.success(`Welcome ${data.user.name}!`);
                         reset({name: '', email: '', password: ''});
                         setPasswordStrength("");
-                        navigate("/login");
+                        localStorage.setItem('auth', JSON.stringify(data));
+                        navigate("/");
                     }
 
                 } catch (error) {

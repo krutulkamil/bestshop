@@ -27,6 +27,7 @@ const Login = () => {
                         toast.error(data.error)
                     } else {
                         reset({ email: '', password: '' });
+                        localStorage.setItem('auth', JSON.stringify(data));
                         navigate("/");
                     }
 
