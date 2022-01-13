@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import {useForm} from "react-hook-form";
 import PasswordStrengthBar from 'react-password-strength-bar';
 import Recaptcha from "react-recaptcha";
+import axios from "axios";
+import {toast} from 'react-toastify';
 
 const Register = () => {
     const {register, handleSubmit, formState: {errors}} = useForm();
@@ -9,6 +11,7 @@ const Register = () => {
     const RECAPTCHA_KEY = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
 
     return (
+
         <div style={{height: '80vh', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
             <div style={{display: 'flex', alignItems: 'center'}}>
                 <div style={{textAlign: "center"}}>
@@ -18,8 +21,15 @@ const Register = () => {
                     </p>
                 </div>
             </div>
-            <form onSubmit={handleSubmit(data => {
-                console.log(data);
+            <form onSubmit={handleSubmit(async (data) => {
+                try {
+                    console.log(data);
+                    const req = await axios.post("/register", data);
+                    console.log(req);
+                    toast.success('Registrations successful. Please login')
+                } catch (error) {
+                    toast.error(error.message)
+                }
             })} className="login__form">
                 <label
                     htmlFor="name"

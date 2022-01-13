@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="662540e1-f05f-4b03-ac0f-a1775a74b880" name="Changes" comment="basic FE routing">
+    <list default="true" id="662540e1-f05f-4b03-ac0f-a1775a74b880" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/header/HeaderNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/header/HeaderNav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/helpers/navigationConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/helpers/navigationConfig.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/scss/elements/_form.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/scss/elements/_contact-form.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/scss/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/scss/main.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +60,7 @@
       <option name="presentableId" value="Default" />
       <updated>1641932223580</updated>
       <workItem from="1641932226767" duration="2186000" />
-      <workItem from="1642010036642" duration="9406000" />
+      <workItem from="1642010036642" duration="15168000" />
     </task>
     <task id="LOCAL-00001" summary="basic frontend/backend setup">
       <created>1641933230156</created>
@@ -80,7 +76,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642013636722</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="login/register form with FE validation">
+      <created>1642021796454</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1642021796454</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,6 +92,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="basic frontend/backend setup" />
     <MESSAGE value="basic FE routing" />
-    <option name="LAST_COMMIT_MESSAGE" value="basic FE routing" />
+    <MESSAGE value="login/register form with FE validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="login/register form with FE validation" />
   </component>
 </project>
