@@ -16,7 +16,18 @@ mongoose
     });
 
 // middlewares
+app.use(express.json({limit: "5mb"}));
+app.use(cors({
+    origin: [process.env.CLIENT_URL]
+}));
 
 // autoload routes
+app.get('/api/register', (req, res) => {
+    res.send("Hey you reached node sever");
+});
 
 // listen
+const port = process.env.PORT || 8000;
+app.listen(port, () => {
+    console.log(`Server is listening on port ${port}`)
+});
