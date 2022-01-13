@@ -1,10 +1,14 @@
 import React from 'react';
 import {useForm} from "react-hook-form";
 import Recaptcha from "react-recaptcha";
+import {toast} from 'react-toastify'
+import axios from 'axios';
+import {useNavigate} from 'react-router-dom';
 
 const Login = () => {
     const {register, handleSubmit, reset, formState: {errors}} = useForm();
     const RECAPTCHA_KEY = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
+    const navigate = useNavigate();
 
     return (
         <div style={{ height: '80vh', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
@@ -12,15 +16,29 @@ const Login = () => {
                 <div style={{textAlign: "center"}}>
                     <h1 style={{fontWeight: 'bold', paddingTop: "50px"}}>Login</h1>
                     <p style={{paddingBottom: '40px'}}>
-                        ...
+                        Access your subscription. Anytime. Anywhere.
                     </p>
                 </div>
             </div>
-            <form onSubmit={handleSubmit(data => {
-                console.log(data);
-                reset({name: '', email: ''});
+            <form onSubmit={handleSubmit(async (credentials) => {
+                try {
+                    const { data } = await axios.post("http://localhost:8000/api/login", credentials);
+                    if (data.error) {
+                        toast.error(data.error)
+                    } else {
+                        reset({ email: '', password: '' });
+                        navigate("/");
+                    }
+
+                } catch (error) {
+                    toast.error(error.message)
+                }
             })} className="login__form">
-                <label htmlFor="email" className="login__label">E-MAIL {errors.email?.message && <span style={{color: 'red'}}> - {errors.email?.message}</span>}</label>
+                <label
+                    htmlFor="email"
+                    className="login__label">E-MAIL
+                    {errors.email?.message && <span style={{color: 'red'}}> - {errors.email?.message}</span>}
+                </label>
                 <input {...register("email",
                     {
                         required: 'This field is required',
@@ -47,7 +65,7 @@ const Login = () => {
                 <Recaptcha
                     sitekey={RECAPTCHA_KEY}
                     render="explicit"
-                    hl="pl"
+                    hl="en"
                     size="invisible"
                 />
             </form>

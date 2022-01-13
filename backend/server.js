@@ -8,6 +8,7 @@ require('dotenv').config();
 
 const app = express();
 
+// mongoDB
 mongoose
     .connect(process.env.DATABASE)
     .then(() => console.log('mongoDB connected...'))
@@ -17,6 +18,7 @@ mongoose
 
 // middlewares
 app.use(express.json({limit: "5mb"}));
+app.use(morgan('dev'));
 app.use(cors({
     origin: [process.env.CLIENT_URL]
 }));

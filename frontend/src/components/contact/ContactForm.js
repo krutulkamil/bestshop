@@ -53,7 +53,7 @@ const ContactForm = () => {
             <Recaptcha
                 sitekey={RECAPTCHA_KEY}
                 render="explicit"
-                hl="pl"
+                hl="en"
                 size="invisible"
             />
         </form>

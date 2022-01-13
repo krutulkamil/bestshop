@@ -4,11 +4,13 @@ import PasswordStrengthBar from 'react-password-strength-bar';
 import Recaptcha from "react-recaptcha";
 import axios from "axios";
 import {toast} from 'react-toastify';
+import {useNavigate} from 'react-router-dom';
 
 const Register = () => {
-    const {register, handleSubmit, formState: {errors}} = useForm();
+    const {register, handleSubmit, reset, formState: {errors}} = useForm();
     const [passwordStrength, setPasswordStrength] = useState("");
     const RECAPTCHA_KEY = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
+    const navigate = useNavigate();
 
     return (
 
@@ -24,11 +26,13 @@ const Register = () => {
             <form onSubmit={handleSubmit(async (credentials) => {
                 try {
                     const { data } = await axios.post("http://localhost:8000/api/register", credentials);
-
                     if (data.error) {
                         toast.error(data.error);
                     } else {
-                        toast.success(data.message);
+                        toast.success(`Welcome ${data.user.name}!`);
+                        reset({name: '', email: '', password: ''});
+                        setPasswordStrength("");
+                        navigate("/login");
                     }
 
                 } catch (error) {
@@ -97,7 +101,7 @@ const Register = () => {
                 <Recaptcha
                     sitekey={RECAPTCHA_KEY}
                     render="explicit"
-                    hl="pl"
+                    hl="en"
                     size="invisible"
                 />
             </form>
