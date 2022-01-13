@@ -22,9 +22,7 @@ app.use(cors({
 }));
 
 // autoload routes
-app.get('/api/register', (req, res) => {
-    res.send("Hey you reached node sever");
-});
+readdirSync("./routes").map((route) => app.use("/api", require(`./routes/${route}`)));
 
 // listen
 const port = process.env.PORT || 8000;
