@@ -28,7 +28,7 @@ const Login = () => {
             </div>
             <form onSubmit={handleSubmit(async (credentials) => {
                 try {
-                    const { data } = await axios.post("http://localhost:8000/api/login", credentials);
+                    const { data } = await axios.post("/login", credentials);
                     if (data.error) {
                         toast.error(data.error)
                     } else {

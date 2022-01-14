@@ -31,7 +31,7 @@ const Register = () => {
             </div>
             <form onSubmit={handleSubmit(async (credentials) => {
                 try {
-                    const { data } = await axios.post("http://localhost:8000/api/register", credentials);
+                    const { data } = await axios.post("/register", credentials);
                     if (data.error) {
                         toast.error(data.error);
                     } else {

@@ -1,11 +1,16 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
-const PricingProfessional = () => {
+const PricingProfessional = ({professional, handleSubscription}) => {
     return (
         <div className="pricing__box pricing__box--professional">
             <div className="pricing__details">
-                <div className="pricing__type">Professional</div>
-                <div className="pricing__price">$50</div>
+                <div className="pricing__type">{professional && professional.nickname}</div>
+                <div className="pricing__price">{professional &&
+                    (professional.unit_amount / 100).toLocaleString("en-US", {
+                        style: "currency",
+                        currency: "USD"
+                    })}</div>
                 <div className="pricing__limited">Limited offer</div>
             </div>
             <ul className="pricing__items">
@@ -15,7 +20,9 @@ const PricingProfessional = () => {
                 <li className="pricing__item">One years licence</li>
                 <li className="pricing__item pricing__item--not">Full support</li>
             </ul>
-            <a href="#" className="btn btn--primary">Begin</a>
+            <Link to="/login">
+                <button onClick={() => handleSubscription(professional)} className="btn btn--primary">Begin</button>
+            </Link>
         </div>
     );
 };
