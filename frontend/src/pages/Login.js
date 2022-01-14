@@ -1,14 +1,20 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {useForm} from "react-hook-form";
 import Recaptcha from "react-recaptcha";
 import {toast} from 'react-toastify'
 import axios from 'axios';
 import {useNavigate} from 'react-router-dom';
+import {UserContext} from "../context";
 
 const Login = () => {
+    const [state, setState] = useContext(UserContext);
     const {register, handleSubmit, reset, formState: {errors}} = useForm();
     const RECAPTCHA_KEY = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
     const navigate = useNavigate();
+
+    if (state && state.user.name) {
+        navigate("/");
+    }
 
     return (
         <div style={{ height: '80vh', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
@@ -27,6 +33,7 @@ const Login = () => {
                         toast.error(data.error)
                     } else {
                         reset({ email: '', password: '' });
+                        setState(data);
                         localStorage.setItem('auth', JSON.stringify(data));
                         navigate("/");
                     }

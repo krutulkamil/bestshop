@@ -1,12 +1,17 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import navigationConfig from '../../helpers/navigationConfig.js'
 import HeaderNavElement from "./HeaderNavElement";
 import {Link} from 'react-router-dom';
-import {isAuth} from "../../helpers/functions";
+import {UserContext} from "../../context";
 
 const HeaderNav = ({setIsOpen}) => {
+    const [state, setState] = useContext(UserContext);
 
     const logout = () => {
+        setState({
+            user: {},
+            token: ""
+        })
         localStorage.removeItem('auth');
     };
 
@@ -16,7 +21,7 @@ const HeaderNav = ({setIsOpen}) => {
                 <HeaderNavElement key={element.id} element={element} setIsOpen={setIsOpen} />
             ))}
 
-            {isAuth() ? (
+            {state && state.user.name ? (
                 <li className="nav__element">
                     <Link onClick={logout} to="/login" className="nav__link">Logout</Link>
                 </li>

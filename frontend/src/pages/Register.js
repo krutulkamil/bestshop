@@ -1,16 +1,22 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 import {useForm} from "react-hook-form";
 import PasswordStrengthBar from 'react-password-strength-bar';
 import Recaptcha from "react-recaptcha";
 import axios from "axios";
 import {toast} from 'react-toastify';
 import {useNavigate} from 'react-router-dom';
+import {UserContext} from "../context";
 
 const Register = () => {
+    const [state, setState] = useContext(UserContext);
     const {register, handleSubmit, reset, formState: {errors}} = useForm();
     const [passwordStrength, setPasswordStrength] = useState("");
     const RECAPTCHA_KEY = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
     const navigate = useNavigate();
+
+    if (state && state.user.name) {
+        navigate("/");
+    }
 
     return (
 
@@ -32,6 +38,7 @@ const Register = () => {
                         toast.success(`Welcome ${data.user.name}!`);
                         reset({name: '', email: '', password: ''});
                         setPasswordStrength("");
+                        setState(data);
                         localStorage.setItem('auth', JSON.stringify(data));
                         navigate("/");
                     }
