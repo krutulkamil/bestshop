@@ -1,14 +1,17 @@
 import React, {useState, useEffect, useContext} from 'react';
 import axios from 'axios';
+import {useNavigate} from 'react-router-dom';
+import {UserContext} from "../../context";
 import PricingBasic from "./PricingBasic";
 import PricingProfessional from "./PricingProfessional";
 import PricingPremium from "./PricingPremium";
-import {UserContext} from "../../context";
 
 
 const Pricing = () => {
     const [prices, setPrices] = useState([]);
     const [state] = useContext(UserContext);
+
+    const navigate = useNavigate();
 
     useEffect(() => {
         fetchPrices();
@@ -19,8 +22,15 @@ const Pricing = () => {
         setPrices(data);
     }
 
-    const handleSubscription = (plan) => {
-        console.log(plan.id);
+    const handleSubscription = async (plan) => {
+        if (state && state.token) {
+            const {data} = await axios.post('/create-subscription', {
+                priceId: plan.id,
+            });
+            window.open(data);
+        } else {
+            navigate("/register")
+        }
     };
 
     const buttonText = () => {
