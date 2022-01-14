@@ -1,13 +1,12 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
 
-const PricingBasic = ({basic, handleSubscription}) => {
+const PricingBasic = ({plan, handleSubscription, buttonText}) => {
     return (
         <div className="pricing__box pricing__box--basic">
             <div className="pricing__details">
-                <div className="pricing__type">{basic && basic.nickname}</div>
-                <div className="pricing__price">{basic &&
-                    (basic.unit_amount / 100).toLocaleString("en-US", {
+                <div className="pricing__type">{plan && plan.nickname}</div>
+                <div className="pricing__price">{plan &&
+                    (plan.unit_amount / 100).toLocaleString("en-US", {
                         style: "currency",
                         currency: "USD"
                 })}</div>
@@ -19,10 +18,7 @@ const PricingBasic = ({basic, handleSubscription}) => {
                 <li className="pricing__item pricing__item--not">Two years licence</li>
                 <li className="pricing__item pricing__item--not">Full support</li>
             </ul>
-            <Link to="/login">
-                <button onClick={() => handleSubscription(basic)} className="btn btn--red">Begin</button>
-            </Link>
-
+                <button onClick={() => handleSubscription(plan)} className="btn btn--red">{buttonText()}</button>
         </div>
     );
 };
