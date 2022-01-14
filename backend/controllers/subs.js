@@ -23,7 +23,7 @@ export const createSubscription = async (req, res) => {
             success_url: process.env.STRIPE_SUCCES_URL,
             cancel_url: process.env.STRIPE_CANCEL_URL
         });
-        console.log('checkout session', session);
+
         res.json(session.url);
     } catch (err) {
         console.log(err);
