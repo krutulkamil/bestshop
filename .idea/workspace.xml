@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="662540e1-f05f-4b03-ac0f-a1775a74b880" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/header/HeaderNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/header/HeaderNav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/pricing/PricingBasic.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pricing/PricingBasic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/pricing/PricingPremium.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pricing/PricingPremium.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/pricing/PricingProfessional.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pricing/PricingProfessional.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +70,7 @@
       <updated>1641932223580</updated>
       <workItem from="1641932226767" duration="2186000" />
       <workItem from="1642010036642" duration="35195000" />
-      <workItem from="1642160019029" duration="4905000" />
+      <workItem from="1642160019029" duration="8326000" />
     </task>
     <task id="LOCAL-00001" summary="basic frontend/backend setup">
       <created>1641933230156</created>
@@ -164,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642162316689</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="UserContext &amp; protected Login/Register if logged">
+      <created>1642166015521</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1642166015522</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,6 +190,7 @@
     <MESSAGE value="JWT &amp; user response on login" />
     <MESSAGE value="save user info to local storage" />
     <MESSAGE value="conditional nav links" />
-    <option name="LAST_COMMIT_MESSAGE" value="conditional nav links" />
+    <MESSAGE value="UserContext &amp; protected Login/Register if logged" />
+    <option name="LAST_COMMIT_MESSAGE" value="UserContext &amp; protected Login/Register if logged" />
   </component>
 </project>

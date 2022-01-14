@@ -5,7 +5,7 @@ const PricingBasic = () => {
         <div className="pricing__box pricing__box--basic">
             <div className="pricing__details">
                 <div className="pricing__type">Basic</div>
-                <div className="pricing__price">$0</div>
+                <div className="pricing__price">$25</div>
             </div>
             <ul className="pricing__items">
                 <li className="pricing__item">100 MB HDD</li>

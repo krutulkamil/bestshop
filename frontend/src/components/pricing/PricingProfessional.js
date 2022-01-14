@@ -5,7 +5,7 @@ const PricingProfessional = () => {
         <div className="pricing__box pricing__box--professional">
             <div className="pricing__details">
                 <div className="pricing__type">Professional</div>
-                <div className="pricing__price">$25</div>
+                <div className="pricing__price">$50</div>
                 <div className="pricing__limited">Limited offer</div>
             </div>
             <ul className="pricing__items">
