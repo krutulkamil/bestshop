@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="662540e1-f05f-4b03-ac0f-a1775a74b880" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/header/HeaderNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/header/HeaderNav.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +59,8 @@
       <option name="presentableId" value="Default" />
       <updated>1641932223580</updated>
       <workItem from="1641932226767" duration="2186000" />
-      <workItem from="1642010036642" duration="34396000" />
+      <workItem from="1642010036642" duration="35195000" />
+      <workItem from="1642160019029" duration="1286000" />
     </task>
     <task id="LOCAL-00001" summary="basic frontend/backend setup">
       <created>1641933230156</created>
@@ -140,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642110214756</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="save user info to local storage">
+      <created>1642110965606</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1642110965606</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +164,7 @@
     <MESSAGE value="hash &amp; compare passwords helper functions" />
     <MESSAGE value="login &amp; register FE logic" />
     <MESSAGE value="JWT &amp; user response on login" />
-    <option name="LAST_COMMIT_MESSAGE" value="JWT &amp; user response on login" />
+    <MESSAGE value="save user info to local storage" />
+    <option name="LAST_COMMIT_MESSAGE" value="save user info to local storage" />
   </component>
 </project>
