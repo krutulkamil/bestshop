@@ -1,4 +1,5 @@
 import React, {useState, useEffect, useContext} from 'react';
+import {useNavigate} from 'react-router-dom';
 import {UserOutlined} from '@ant-design/icons';
 import axios from 'axios';
 import {UserContext} from "../context";
@@ -6,7 +7,8 @@ import moment from "moment";
 
 const Account = () => {
     const [subscriptions, setSubscriptions] = useState([]);
-    const [state] = useContext(UserContext)
+    const [state] = useContext(UserContext);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const getSubscriptions = async () => {
@@ -43,7 +45,10 @@ const Account = () => {
                                     {moment(sub.current_period_end * 1000)
                                         .format('dddd, MMMM Do YYYY h:mm:ss a')}
                                 </p>
-                                <button className="btn btn--primary">Access</button>
+                                <button
+                                    onClick={() => navigate(`/${sub.plan.nickname.toLowerCase()}`)}
+                                    className="btn btn--primary"
+                                >Access</button>
                                 <button className="btn btn--red">Manage Subscription</button>
                             </section>
                         </div>

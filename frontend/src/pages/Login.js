@@ -35,7 +35,7 @@ const Login = () => {
                         reset({ email: '', password: '' });
                         setState(data);
                         localStorage.setItem('auth', JSON.stringify(data));
-                        navigate("/");
+                        navigate("/account");
                     }
 
                 } catch (error) {
