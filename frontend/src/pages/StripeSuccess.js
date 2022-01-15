@@ -5,18 +5,26 @@ import {useNavigate} from 'react-router-dom';
 import {UserContext} from "../context";
 
 const StripeSuccess = () => {
-    const [state] = useContext(UserContext)
+    const [state, setState] = useContext(UserContext)
     const navigate = useNavigate();
 
     useEffect(() => {
         const getSubscriptionStatus = async () => {
             const {data} = await axios.get("/subscription-status");
-            console.log("SUBSRIPTION", data);
             if (data && data.length === 0) {
                 navigate("/");
 
             } else {
-                navigate("/account");
+                // update localstorage
+                const auth = JSON.parse(localStorage.getItem('auth'));
+                auth.user = data;
+                localStorage.setItem('auth', JSON.stringify(auth));
+
+                // update state (context);
+                setState(auth);
+                setTimeout(() => {
+                    navigate("/account");
+                }, 1000);
             }
         };
 

@@ -4,8 +4,9 @@ import {isAuth} from "./helpers/functions";
 import Register from './pages/Register';
 import Login from './pages/Login';
 import Home from './pages/Home';
-import StripeSuccess from './pages/stripe-success';
-import StripeCancel from './pages/stripe-cancel';
+import StripeSuccess from './pages/StripeSuccess';
+import StripeCancel from './pages/StripeCancel';
+import Account from "./pages/Account";
 import {ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -25,6 +26,11 @@ const App = () => {
                 <Route path="/stripe/cancel" element={
                     <RequireAuth redirectTo="/login">
                         <StripeCancel />
+                    </RequireAuth>
+                } />
+                <Route path="/account" element={
+                    <RequireAuth redirectTo="/login">
+                        <Account />
                     </RequireAuth>
                 } />
             </Routes>
