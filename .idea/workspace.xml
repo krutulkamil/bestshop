@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="662540e1-f05f-4b03-ac0f-a1775a74b880" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Account.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Account.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/subs.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/subs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/routes/subs.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/subs.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +69,7 @@
       <updated>1641932223580</updated>
       <workItem from="1641932226767" duration="2186000" />
       <workItem from="1642010036642" duration="35195000" />
-      <workItem from="1642160019029" duration="41959000" />
+      <workItem from="1642160019029" duration="43024000" />
     </task>
     <task id="LOCAL-00001" summary="basic frontend/backend setup">
       <created>1641933230156</created>
@@ -233,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642259369294</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="protected subscription plan pages">
+      <created>1642262271056</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1642262271056</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,6 +269,7 @@
     <MESSAGE value="subscription status - frontend" />
     <MESSAGE value="updating user info in context and local storage" />
     <MESSAGE value="allow user to access plan" />
-    <option name="LAST_COMMIT_MESSAGE" value="allow user to access plan" />
+    <MESSAGE value="protected subscription plan pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="protected subscription plan pages" />
   </component>
 </project>
