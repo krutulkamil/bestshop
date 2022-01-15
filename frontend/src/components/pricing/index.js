@@ -6,7 +6,6 @@ import PricingBasic from "./PricingBasic";
 import PricingProfessional from "./PricingProfessional";
 import PricingPremium from "./PricingPremium";
 
-
 const Pricing = () => {
     const [prices, setPrices] = useState([]);
     const [state] = useContext(UserContext);

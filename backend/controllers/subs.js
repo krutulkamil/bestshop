@@ -44,7 +44,6 @@ export const subscriptionStatus = async (req, res) => {
                 subscriptions: subscription.data,
             }, { new: true }
         );
-        
         res.json(updated);
 
     } catch (err) {

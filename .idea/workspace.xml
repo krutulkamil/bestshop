@@ -4,7 +4,9 @@
     <list default="true" id="662540e1-f05f-4b03-ac0f-a1775a74b880" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/controllers/subs.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/subs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/routes/subs.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/subs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/pricing/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pricing/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/stripe-success.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/stripe-success.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +71,7 @@
       <updated>1641932223580</updated>
       <workItem from="1641932226767" duration="2186000" />
       <workItem from="1642010036642" duration="35195000" />
-      <workItem from="1642160019029" duration="23786000" />
+      <workItem from="1642160019029" duration="30782000" />
     </task>
     <task id="LOCAL-00001" summary="basic frontend/backend setup">
       <created>1641933230156</created>
@@ -204,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642196039368</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="subscription status - backend">
+      <created>1642196950624</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1642196950624</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -230,6 +239,7 @@
     <MESSAGE value="jwt token verifying &amp; plans fix" />
     <MESSAGE value="create subscription middleware" />
     <MESSAGE value="stripe success/cancel protected routes" />
-    <option name="LAST_COMMIT_MESSAGE" value="stripe success/cancel protected routes" />
+    <MESSAGE value="subscription status - backend" />
+    <option name="LAST_COMMIT_MESSAGE" value="subscription status - backend" />
   </component>
 </project>
