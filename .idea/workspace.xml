@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="662540e1-f05f-4b03-ac0f-a1775a74b880" name="Changes" comment="subscriptions account setup">
+    <list default="true" id="662540e1-f05f-4b03-ac0f-a1775a74b880" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/controllers/subs.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/subs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/routes/subs.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/subs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/stripe-cancel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/StripeCancel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/stripe-success.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/StripeSuccess.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/opening/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/opening/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/pricing/PricingBasic.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pricing/PricingBasic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/pricing/PricingPremium.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pricing/PricingPremium.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/pricing/PricingProfessional.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pricing/PricingProfessional.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/pricing/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pricing/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +72,7 @@
       <updated>1641932223580</updated>
       <workItem from="1641932226767" duration="2186000" />
       <workItem from="1642010036642" duration="35195000" />
-      <workItem from="1642160019029" duration="35522000" />
+      <workItem from="1642160019029" duration="39255000" />
     </task>
     <task id="LOCAL-00001" summary="basic frontend/backend setup">
       <created>1641933230156</created>
@@ -223,7 +221,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642245965937</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="updating user info in context and local storage">
+      <created>1642252779075</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1642252779075</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,6 +256,7 @@
     <MESSAGE value="stripe success/cancel protected routes" />
     <MESSAGE value="subscription status - backend" />
     <MESSAGE value="subscription status - frontend" />
-    <option name="LAST_COMMIT_MESSAGE" value="subscription status - frontend" />
+    <MESSAGE value="updating user info in context and local storage" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating user info in context and local storage" />
   </component>
 </project>

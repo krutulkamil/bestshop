@@ -1,6 +1,5 @@
 import React, {useContext} from 'react';
 import {useNavigate} from 'react-router-dom';
-import {scroller} from "react-scroll";
 import {UserContext} from "../../context";
 import background from '../../assets/Background.png';
 
@@ -10,9 +9,7 @@ const Opening = () => {
 
     const handleOpenShop = () => {
         if (state && state.token) {
-            scroller.scrollTo("pricing", {
-                duration: 2000, delay: 100, offset: -100, smooth: 'easeInOutQuart'
-            })
+            navigate("/account");
         } else {
             navigate("/register");
         }

@@ -19,7 +19,11 @@ const PricingPremium = ({plan, handleSubscription, buttonText}) => {
                 <li className="pricing__item">Two years licence</li>
                 <li className="pricing__item">Full support</li>
             </ul>
-                <button onClick={() => handleSubscription(plan)} className="btn btn--green">{buttonText()}</button>
+                <button
+                    onClick={() => handleSubscription(plan)}
+                    className="btn btn--green">
+                    {plan && buttonText(plan)}
+                </button>
         </div>
     )
 };

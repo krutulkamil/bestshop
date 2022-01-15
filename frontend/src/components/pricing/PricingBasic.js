@@ -18,7 +18,11 @@ const PricingBasic = ({plan, handleSubscription, buttonText}) => {
                 <li className="pricing__item pricing__item--not">Two years licence</li>
                 <li className="pricing__item pricing__item--not">Full support</li>
             </ul>
-                <button onClick={() => handleSubscription(plan)} className="btn btn--red">{buttonText()}</button>
+                <button
+                    onClick={() => handleSubscription(plan)}
+                    className="btn btn--red">
+                    {plan && buttonText(plan)}
+                </button>
         </div>
     );
 };
