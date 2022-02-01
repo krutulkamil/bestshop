@@ -22,6 +22,11 @@ const Account = () => {
 
     }, [state]);
 
+    const manageSubscriptions = async () => {
+        const {data} = await axios.get("/customer-portal");
+        window.open(data);
+    };
+
     return (
         <div style={{height: '80vh', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
             <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center',}}>
@@ -49,7 +54,10 @@ const Account = () => {
                                     onClick={() => navigate(`/${sub.plan.nickname.toLowerCase()}`)}
                                     className="btn btn--primary"
                                 >Access</button>
-                                <button className="btn btn--red">Manage Subscription</button>
+                                <button
+                                    className="btn btn--red"
+                                    onClick={manageSubscriptions}
+                                >Manage Subscription</button>
                             </section>
                         </div>
                     ))}

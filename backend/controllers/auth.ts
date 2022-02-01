@@ -1,9 +1,22 @@
+// express
+import {Request, Response} from "express"
+// mongoDB model
 import User from "../models/user";
+// bcypt helper functions
 import {hashPassword, comparePassword} from "../helpers/auth";
+// jwt
 import jwt from 'jsonwebtoken';
-const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
+// stripe
+import Stripe from "stripe";
+// .env
+import dotenv from "dotenv";
 
-export const register = async (req, res) => {
+dotenv.config();
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
+    apiVersion: '2020-08-27'
+});
+
+export const register = async (req: Request, res: Response) => {
     // validation
     try {
         const {name, email, password} = req.body;
@@ -29,7 +42,7 @@ export const register = async (req, res) => {
         const hashedPassword = await hashPassword(password);
 
         // create account in stripe
-        const customer = await stripe.customers.create({
+        const customer: Stripe.Customer = await stripe.customers.create({
             email,
         });
 
@@ -42,8 +55,7 @@ export const register = async (req, res) => {
             }).save();
 
             // create signed token
-            const token = jwt.sign({_id: user._id}, process.env.JWT_SECRET, {expiresIn: '7d'});
-
+            const token = jwt.sign({_id: user._id}, process.env.JWT_SECRET!, {expiresIn: '7d'});
             const {password, ...rest} = user._doc;
             return res.json({
                 user: rest,
@@ -58,7 +70,7 @@ export const register = async (req, res) => {
     }
 };
 
-export const login = async (req, res) => {
+export const login = async (req: Request, res: Response) => {
     try {
         // check email
         const user = await User.findOne({email: req.body.email});
@@ -75,8 +87,7 @@ export const login = async (req, res) => {
             });
         }
         // create signed token
-        const token = jwt.sign({_id: user._id}, process.env.JWT_SECRET, {expiresIn: '7d'});
-
+        const token = jwt.sign({_id: user._id}, process.env.JWT_SECRET!, {expiresIn: '7d'});
         const {password, ...rest} = user._doc;
 
         res.json({

@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
-const {Schema} = mongoose;
+
+const Schema = mongoose.Schema;
 
 const userSchema = new Schema({
     name: {
@@ -21,7 +22,18 @@ const userSchema = new Schema({
     },
     stripe_customer_id: String,
     subscriptions: [],
-
 });
 
-export default mongoose.model('User', userSchema);
+interface DocumentResult<T>{
+    _doc: T;
+}
+
+export interface IUser extends DocumentResult<IUser> {
+    name: string;
+    email: string;
+    password: string;
+    stripe_customer_id: string;
+    subscriptions: [];
+}
+
+export default mongoose.model<IUser>('User', userSchema);

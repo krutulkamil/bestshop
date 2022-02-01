@@ -19,7 +19,6 @@ const Register = () => {
     }
 
     return (
-
         <div style={{height: '80vh', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
             <div style={{display: 'flex', alignItems: 'center'}}>
                 <div style={{textAlign: "center"}}>

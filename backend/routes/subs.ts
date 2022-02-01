@@ -1,4 +1,6 @@
+// express
 import express from "express";
+// subscription controllers
 import {
     prices,
     createSubscription,
@@ -6,6 +8,7 @@ import {
     subscriptions,
     customerPortal
 } from '../controllers/subs';
+// express-jwt middleware
 import {requireSignin} from '../middlewares';
 
 const router = express.Router();
@@ -16,4 +19,4 @@ router.get('/subscription-status', requireSignin, subscriptionStatus);
 router.get('/subscriptions', requireSignin, subscriptions);
 router.get('/customer-portal', requireSignin, customerPortal);
 
-module.exports = router;
+export default router;
