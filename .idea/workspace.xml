@@ -3,22 +3,44 @@
   <component name="ChangeListManager">
     <list default="true" id="662540e1-f05f-4b03-ac0f-a1775a74b880" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/controllers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/auth.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/controllers/subs.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/controllers/subs.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/helpers/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/helpers/auth.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/middlewares/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/middlewares/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/models/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/models/user.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/auth.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/routes/subs.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/routes/subs.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/server.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Account.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Account.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/benefits/BenefitsFirst.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/benefits/BenefitsFirst.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/benefits/BenefitsSecond.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/benefits/BenefitsSecond.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/benefits/BenefitsThird.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/benefits/BenefitsThird.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/benefits/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/benefits/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/contact/ContactForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/contact/ContactForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/contact/ContactInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/contact/ContactInfo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/contact/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/contact/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/footer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/footer/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/header/HeaderNav.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/header/HeaderNav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/header/HeaderNavElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/header/HeaderNavElement.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/header/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/header/Navigation.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/header/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/main/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/main/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/opening/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/opening/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/pricing/PricingBasic.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pricing/PricingBasic.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/pricing/PricingPremium.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pricing/PricingPremium.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/pricing/PricingProfessional.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pricing/PricingProfessional.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/pricing/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/pricing/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/statistics/StatsBlock.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/statistics/StatsBlock.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/statistics/StatsContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/statistics/StatsContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/statistics/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/statistics/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/context/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/context/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/helpers/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/helpers/functions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/helpers/navigationConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/helpers/navigationConfig.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/helpers/statisticsConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/helpers/statisticsConfig.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Account.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Account.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Register.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/StripeCancel.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/StripeCancel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/StripeSuccess.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/StripeSuccess.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/plans/Basic.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/plans/Basic.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/plans/Premium.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/plans/Premium.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/plans/Professional.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/plans/Professional.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +82,7 @@
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="16.13.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="16.11.19" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -71,7 +93,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Karolina\Desktop\bestshop\frontend" />
       <recent name="C:\Users\Karolina\Desktop\bestshop\backend" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Karolina\Desktop\bestshop\frontend" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -88,7 +114,7 @@
       <workItem from="1642348540479" duration="173000" />
       <workItem from="1642349977075" duration="2840000" />
       <workItem from="1643652483322" duration="7574000" />
-      <workItem from="1643713657673" duration="10269000" />
+      <workItem from="1643713657673" duration="22877000" />
     </task>
     <task id="LOCAL-00001" summary="basic frontend/backend setup">
       <created>1641933230156</created>
@@ -265,14 +291,25 @@
       <option name="project" value="LOCAL" />
       <updated>1642263561865</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="backend - typescript &amp; es6 imports">
+      <created>1643727540089</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1643727540089</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/frontend/src/index.d.ts" />
+      </list>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="basic frontend/backend setup" />
     <MESSAGE value="basic FE routing" />
     <MESSAGE value="login/register form with FE validation" />
     <MESSAGE value="client-side forms validation" />
@@ -297,6 +334,7 @@
     <MESSAGE value="allow user to access plan" />
     <MESSAGE value="protected subscription plan pages" />
     <MESSAGE value="manage subscriptions - backend" />
-    <option name="LAST_COMMIT_MESSAGE" value="manage subscriptions - backend" />
+    <MESSAGE value="backend - typescript &amp; es6 imports" />
+    <option name="LAST_COMMIT_MESSAGE" value="backend - typescript &amp; es6 imports" />
   </component>
 </project>
