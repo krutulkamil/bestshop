@@ -1,7 +1,7 @@
 // react
 import React, {FunctionComponent, useContext, useState} from 'react';
 // react-router-dom
-import {NavigateFunction, useNavigate} from 'react-router-dom';
+import {NavigateFunction, useNavigate, Link} from 'react-router-dom';
 // react-hook-form
 import {useForm} from "react-hook-form";
 // react-recaptcha
@@ -27,11 +27,11 @@ const Register: FunctionComponent = (): JSX.Element => {
     }
 
     return (
-        <div style={{height: '80vh', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-            <div style={{display: 'flex', alignItems: 'center'}}>
-                <div style={{textAlign: "center"}}>
-                    <h1 style={{fontWeight: 'bold', paddingTop: "50px"}}>Let's get started</h1>
-                    <p style={{paddingBottom: '40px'}}>
+        <div className="auth__container">
+            <div className="auth__head">
+                <div className="auth__welcome">
+                    <h1 className="auth__header">Let's get started</h1>
+                    <p className="auth__text">
                         Sign up for free. No credit card required.
                     </p>
                 </div>
@@ -53,16 +53,16 @@ const Register: FunctionComponent = (): JSX.Element => {
                 } catch (error) {
                     toast.error(error.message);
                 }
-            })} className="login__form">
+            })} className="auth__form">
                 <label
                     htmlFor="name"
-                    className="login__label">NAME
+                    className="auth__label">NAME
                     {errors.name?.message &&
-                        <span style={{color: 'red'}}> - {errors.name?.message}</span>}
+                        <span className="warning"> - {errors.name?.message}</span>}
                     {errors.name?.type === "maxLength" &&
-                        <span style={{color: 'red'}}> - Max length exceeded </span>}
+                        <span className="warning"> - Max length exceeded </span>}
                     {errors.name?.type === "minLength" &&
-                        <span style={{color: 'red'}}> - At least 5 characters needed! </span>}
+                        <span className="warning"> - At least 5 characters needed! </span>}
                 </label>
                 <input {...register("name",
                     {
@@ -71,9 +71,9 @@ const Register: FunctionComponent = (): JSX.Element => {
                        type="text" id="name" />
                 <label
                     htmlFor="email"
-                    className="login__label">E-MAIL
+                    className="auth__label">E-MAIL
                     {errors.email?.message &&
-                        <span style={{color: 'red'}}> - {errors.email?.message}</span>}
+                        <span className="warning"> - {errors.email?.message}</span>}
                 </label>
                 <input {...register("email",
                     {
@@ -86,11 +86,11 @@ const Register: FunctionComponent = (): JSX.Element => {
                        type="email" id="email" />
                 <label
                     htmlFor="password-strength"
-                    className="login__label">PASSWORD
+                    className="auth__label">PASSWORD
                     {errors.password?.message &&
-                        <span style={{color: 'red'}}> - {errors.password?.message}</span>}
+                        <span className="warning"> - {errors.password?.message}</span>}
                     {errors.password?.type === "minLength" &&
-                        <span style={{color: 'red'}}> - Your password is too short! </span>}
+                        <span className="warning"> - Your password is too short! </span>}
                 </label>
                 <input
                     type="password"
@@ -100,11 +100,11 @@ const Register: FunctionComponent = (): JSX.Element => {
                 <PasswordStrengthBar password={passwordStrength} minLength={6} className="strength-bar"/>
                 <label
                     htmlFor="password"
-                    className="login__label">CONFIRM PASSWORD
+                    className="auth__label">CONFIRM PASSWORD
                     {errors.password?.message &&
-                        <span style={{color: 'red'}}> - {errors.password?.message}</span>}
+                        <span className="warning"> - {errors.password?.message}</span>}
                     {errors.password?.type === "minLength" &&
-                        <span style={{color: 'red'}}> - Your password is too short! </span>}
+                        <span className="warning"> - Your password is too short! </span>}
                 </label>
                 <input {...register("password",
                     {
@@ -112,7 +112,10 @@ const Register: FunctionComponent = (): JSX.Element => {
                             passwordEqual: value => (value === passwordStrength) || 'Passwords do not match!'
                     }})}
                        type="password" id="password" />
-                <button className="btn btn--form" type="submit">Register</button>
+                <div className="auth__submit">
+                    <Link to="/login" className="auth__redirect">Already have an account? Log in!</Link>
+                    <button className="btn btn--form" type="submit">Register</button>
+                </div>
                 <Recaptcha
                     sitekey={RECAPTCHA_KEY}
                     render="explicit"

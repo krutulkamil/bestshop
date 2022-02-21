@@ -1,0 +1,74 @@
+/* ACCOUNT MANAGEMENT SECTION */
+
+.account {
+
+  &__container {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__center {
+    text-align: center;
+  }
+  
+  &__icon {
+    font-size: 40px;
+    padding-top: 50px;
+  }
+  
+  &__header {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    margin-bottom: 15px;
+  }
+
+}
+
+.plan {
+
+  &__section {
+    width: 80vw;
+  }
+  
+  &__nickname {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  &__price {
+    margin-bottom: 5px;
+    font-style: italic;
+    letter-spacing: 1px;
+  }
+
+  &__status {
+    margin-bottom: 5px;
+  }
+
+  &__digits {
+    margin-bottom: 5px;
+  }
+
+  &__period {
+    margin-bottom: 15px;
+    line-height: 1.3rem;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -41,9 +41,9 @@ const StripeSuccess: FunctionComponent = (): JSX.Element => {
     }, [state]);
 
     return (
-        <div style={{display: 'flex', justifyContent: 'center', fontWeight: 'bold', height: "90vh"}}>
-            <div style={{display: 'flex', alignItems: 'center'}}>
-                <SyncOutlined spin style={{fontSize: "50px"}}/>
+        <div className="stripe__container">
+            <div className="stripe__center">
+                <SyncOutlined spin className="stripe__icon"/>
             </div>
         </div>
     )

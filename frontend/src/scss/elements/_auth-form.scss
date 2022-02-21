@@ -1,6 +1,33 @@
 /* LOGIN SECTION - LOGIN FORM */
 
-.login {
+.auth {
+
+  &__container {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__welcome {
+    text-align: center;
+  }
+
+  &__header {
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding-top: 50px;
+  }
+
+  &__text {
+    padding-bottom: 40px;
+  }
 
   &__form {
     width: 50%;
@@ -19,9 +46,23 @@
 
     .btn--form {
       align-self: flex-end;
-      margin-top: 20px;
     }
 
+  }
+
+  &__submit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__redirect {
+    color: $color-primary;
+    margin-right: 15px;
+
+    @include mobile {
+      font-size: 14px;
+    }
   }
 
   &__label {
@@ -89,4 +130,8 @@ input[id="password-strength"] {
   background-repeat: no-repeat;
   background-size: 12px 11px;
   background-position: center;
+}
+
+.warning {
+  color: $color-redish;
 }

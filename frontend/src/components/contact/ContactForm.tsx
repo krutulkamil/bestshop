@@ -14,7 +14,7 @@ const ContactForm: FunctionComponent = (): JSX.Element => {
             console.log(data);
             reset({name: '', email: ''});
         })} className="contact__form">
-            <label htmlFor="name" className="contact__label">NAME {errors.name?.message && <span style={{color: 'red'}}> - {errors.name?.message}</span>}</label>
+            <label htmlFor="name" className="contact__label">NAME {errors.name?.message && <span className="warning"> - {errors.name?.message}</span>}</label>
             <input {...register("name",
                 {
                     required: 'This field is required',
@@ -25,7 +25,7 @@ const ContactForm: FunctionComponent = (): JSX.Element => {
                 })}
                    type="text" id="name" />
 
-            <label htmlFor="email" className="contact__label">E-MAIL {errors.email?.message && <span style={{color: 'red'}}> - {errors.email?.message}</span>}</label>
+            <label htmlFor="email" className="contact__label">E-MAIL {errors.email?.message && <span className="warning"> - {errors.email?.message}</span>}</label>
             <input {...register("email",
                 {
                     required: 'This field is required',

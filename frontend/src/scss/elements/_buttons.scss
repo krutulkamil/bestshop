@@ -34,9 +34,23 @@
     padding: 18px 65px;
   }
 
+  &--access {
+    background-color: $color-primary;;
+    box-shadow: 5px 10px 14px $color-primary-shadow;
+    font-size: 0.8125rem;
+    padding: 12px 40px;
+    margin-right: 30px;
+  }
+
   &--red {
     background-color: $color-redish;
     font-size: 0.8125rem;
+  }
+
+  &--manage {
+    background-color: $color-redish;
+    font-size: 0.8125rem;
+    padding: 12px 40px;
   }
 
   &--green {

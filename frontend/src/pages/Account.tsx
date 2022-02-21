@@ -39,36 +39,37 @@ const Account: FunctionComponent = (): JSX.Element => {
     };
 
     return (
-        <div style={{height: '80vh', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
-            <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center',}}>
-                <div style={{textAlign: "center"}}>
-                    <UserOutlined style={{fontSize: "40px", paddingTop: "50px"}}/>
-                    <h1 style={{fontWeight: 'bold'}}>Account</h1>
-                    <p>Subscription status</p>
+        <div className="account__container">
+            <div className="account__head">
+                <div className="account__center">
+                    <UserOutlined className="account__icon"/>
+                    <h1 className="account__header">Account</h1>
+                    <p className="account__text">Subscription status:</p>
 
                     {subscriptions && subscriptions.map((sub) => (
                         <div key={sub.id}>
-                            <section>
-                                <hr />
-                                <h4 style={{fontWeight: 'bold'}}>{sub.plan.nickname}</h4>
-                                <h5>{(sub.plan.amount / 100).toLocaleString("en-US", {
+                            <section className="plan__section">
+                                <h4 className="plan__nickname">{sub.plan.nickname}</h4>
+                                <h5 className="plan__price">{(sub.plan.amount / 100).toLocaleString("en-US", {
                                     style: "currency",
                                     currency: sub.plan.currency
                                 })}</h5>
-                                <p>Status: {sub.status}</p>
-                                <p>Card last 4 digit: {sub.default_payment_method.card.last4}</p>
-                                <p>Current period end: {" "}
+                                <p className="plan__status">Status: {sub.status}</p>
+                                <p className="plan__digits">Card last 4 digits: {sub.default_payment_method.card.last4}</p>
+                                <p className="plan__period">Current period end: {" "}
                                     {moment(sub.current_period_end * 1000)
                                         .format('dddd, MMMM Do YYYY h:mm:ss a')}
                                 </p>
-                                <button
-                                    onClick={() => navigate(`/${sub.plan.nickname.toLowerCase()}`)}
-                                    className="btn btn--primary"
-                                >Access</button>
-                                <button
-                                    className="btn btn--red"
-                                    onClick={manageSubscriptions}
-                                >Manage Subscription</button>
+                                <div className="plan__buttons">
+                                    <button
+                                        onClick={() => navigate(`/${sub.plan.nickname.toLowerCase()}`)}
+                                        className="btn btn--access"
+                                    >Access</button>
+                                    <button
+                                        className="btn btn--manage"
+                                        onClick={manageSubscriptions}
+                                    >Manage Subscription</button>
+                                </div>
                             </section>
                         </div>
                     ))}
