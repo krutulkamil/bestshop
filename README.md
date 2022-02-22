@@ -5,6 +5,10 @@
 ### :floppy_disk: Live demo  : 
 https://bestshop-frontend.vercel.app/
 
+### :sparkles: Give it a try!
+Login: krutulkamil@onet.pl<br />
+Password: test12345
+
 ### :bricks: Stack  : 
 TypeScript, React, Node.js, Express, MongoDB, SCSS, Stripe, React Hook Forms
 
